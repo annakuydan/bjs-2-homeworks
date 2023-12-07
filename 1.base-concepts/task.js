@@ -1,6 +1,6 @@
 "use strict"
 function solveEquation(a, b, c) {
-  const discriminant = b ** - 4 * a * c;
+  const discriminant = b ** 2 - 4 * a * c;
   if (discriminant < 0) {
     return [];
   } else if (discriminant === 0) {
