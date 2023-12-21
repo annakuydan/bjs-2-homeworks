@@ -13,7 +13,7 @@ function getArrayParams(...arr) {
     sum = arr[i]
     avg = (min + max + sum) / 3;
     avg.toFixed();
-    avg - Number(avg);
+    avg = Number(avg);
   }
   return { min: min, max: max, avg: avg };
 }
