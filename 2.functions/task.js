@@ -1,7 +1,7 @@
 function getArrayParams(...arr) {
   let min, max, sum, avg;
-  min = infinity;
-  max = -infinity;
+  min = Infinity;
+  max = -Infinity;
 
   for (i = 0; i < arr.length; i++) {
     if (arr[i] > max) {
@@ -17,7 +17,7 @@ function getArrayParams(...arr) {
   }
   return { min: min, max: max, avg: avg };
 }
-getArrayParams([1, 5, 8, -100, 10]);
+getArrayParams([1, 5, -5, 10]);
 
 function summElementsWorker(...arr) {
 
