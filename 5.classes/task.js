@@ -103,7 +103,7 @@ class Library {
         let index = this.books.findBookBy(book => book.name === bookName);
         if(index !== -1) {
             let requestedBook = this.books[index];
-            this.books.splisw(index, 1);
+            this.books.splise(index, 1);
             return requestedBook;
         } else {
             return null;
