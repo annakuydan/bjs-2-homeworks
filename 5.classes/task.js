@@ -100,14 +100,12 @@ class Library {
     }
 
     giveBookByName(bookName){
-        let index = this.books.findBookBy(book => book.name === bookName);
-        if(index !== -1) {
-            let requestedBook = this.books[index];
-            this.books.splise(index, 1);
-            return requestedBook;
-        } else {
-            return null;
+        for (let i =  0; i < this.books.length; i++) {
+            if (this.books[i].name === bookName) {
+                return this.books.splice(i, 1)[0];
+            }
         }
+        return null;
     }
 }
 
